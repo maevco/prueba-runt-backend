@@ -1,0 +1,18 @@
+package com.runt.prueba.controler;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.runt.prueba.service.ProfesorServiceDecl;
+
+@RestController
+public class ProfesorControler {
+	
+	@Autowired
+	private ProfesorServiceDecl profesorService;
+	
+	private List<Progesor> listar(){
+		profesorService.getAllProfesor()
+	}
+
+}

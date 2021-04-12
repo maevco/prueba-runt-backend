@@ -1,0 +1,7 @@
+package com.runt.prueba.service;
+
+public class ColegioServiceDecl {
+	
+	public List<Colegio> getAllColegio();
+
+}

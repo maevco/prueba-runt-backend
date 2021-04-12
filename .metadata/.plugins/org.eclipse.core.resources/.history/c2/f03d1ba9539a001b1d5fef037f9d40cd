@@ -1,0 +1,15 @@
+package com.runt.prueba.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.runt.prueba.entity.Asignatura;
+
+public interface AsignaturaRepository extends JpaRepository<Asignatura, Long> {
+	
+	
+	@Query("SELECT CASE WHEN COUNT(e) > 0 THEN 'true' ELSE 'false' END FROM Empleado e JOIN e.tipoIdentificacion ti WHERE ti.id = ?1 AND e.numeroIdentificacion = ?2")
+	public List<Asignatura> buscarPorId(long profesorId);
+
+}

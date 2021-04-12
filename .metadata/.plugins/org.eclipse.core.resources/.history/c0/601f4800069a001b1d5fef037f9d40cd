@@ -1,0 +1,21 @@
+package com.runt.prueba.service;
+
+import java.util.List;
+
+import com.runt.prueba.entity.Curso;
+
+public class CursoServiceImpl implements CursoServiceDecl{
+
+	@Override
+	public List<Curso> getAllCurso() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Curso add(Curso curso) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

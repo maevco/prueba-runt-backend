@@ -1,0 +1,10 @@
+package com.runt.prueba.entity;
+
+public class Materia {
+	
+	private Long id;
+	private String nombre;
+	
+	
+
+}

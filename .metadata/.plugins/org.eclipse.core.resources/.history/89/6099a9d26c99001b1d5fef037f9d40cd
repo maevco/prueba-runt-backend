@@ -1,0 +1,5 @@
+package com.runt.prueba.entity;
+
+public class Estudiante {
+
+}

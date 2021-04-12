@@ -1,0 +1,8 @@
+package com.runt.prueba.service;
+
+public interface AsignaturaServiceDecl {
+	
+	
+	public List<Asignatura> getAllProfesorId;
+
+}

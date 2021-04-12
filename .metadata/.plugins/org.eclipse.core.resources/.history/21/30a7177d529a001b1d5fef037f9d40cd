@@ -1,0 +1,27 @@
+package com.runt.prueba.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.runt.prueba.entity.Asignatura;
+
+@Service
+public class AsiganaturaServiceImpl implements AsignaturaServiceDecl {
+	
+	@Autowired
+
+	@Override
+	public List<Asignatura> getAllProfesorId(long profesorId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Asignatura add(Asignatura asignatura) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

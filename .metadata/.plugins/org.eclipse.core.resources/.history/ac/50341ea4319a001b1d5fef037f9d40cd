@@ -1,0 +1,22 @@
+package com.runt.prueba.service;
+
+import java.util.List;
+
+import com.runt.prueba.entity.Profesor;
+
+@Service
+public class ProfesorServiceImpl implements ProfesorServiceDecl{
+
+	@Override
+	public List<Profesor> getAllProfesor() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Profesor add(Profesor profesor) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

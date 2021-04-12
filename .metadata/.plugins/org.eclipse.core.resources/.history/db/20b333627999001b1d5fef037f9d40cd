@@ -1,0 +1,7 @@
+package com.runt.prueba.service;
+
+public interface CursoServiceDecl {
+
+	
+	public List<Curso> getAllCurso();
+}

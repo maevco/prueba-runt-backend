@@ -1,0 +1,27 @@
+package com.runt.prueba.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.runt.prueba.entity.Asignatura;
+import com.runt.prueba.repository.AsignaturaRepository;
+
+@Service
+public class AsiganaturaServiceImpl implements AsignaturaServiceDecl {
+	
+	@Autowired
+	private AsignaturaRepository asignaturaRepository;
+
+	@Override
+	public List<Asignatura> getAllProfesorId(long profesorId) {
+		return asignaturaRepository.buscarPorId(profesorId);
+	}
+
+	@Override
+	public Asignatura add(Asignatura asignatura) {
+		return asignaturaRepository.save(asignatura);
+	}
+
+}

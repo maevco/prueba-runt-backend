@@ -1,0 +1,8 @@
+package com.runt.prueba.controler;
+
+@CrossOrigin(origins = "*", maxAge = 3600)
+@RestController
+@RequestMapping("/api/factura/")
+public class ColegioControler {
+
+}

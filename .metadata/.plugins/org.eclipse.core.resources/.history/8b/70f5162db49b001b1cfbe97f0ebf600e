@@ -1,0 +1,56 @@
+package com.runt.prueba.entity;
+
+import java.io.Serializable;
+
+public class AsignaturaEnvio implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private String materia;
+	private String profesor;
+	private int grado;
+	private String salon;
+
+	public AsignaturaEnvio() {
+
+	}
+
+	public AsignaturaEnvio(String materia, String profesor, int grado, String salon) {
+
+	}
+
+	public String getMateria() {
+		return materia;
+	}
+
+	public void setMateria(String materia) {
+		this.materia = materia;
+	}
+
+	public String getProfesor() {
+		return profesor;
+	}
+
+	public void setProfesor(String profesor) {
+		this.profesor = profesor;
+	}
+
+	public int getGrado() {
+		return grado;
+	}
+
+	public void setGrado(int grado) {
+		this.grado = grado;
+	}
+
+	public String getSalon() {
+		return salon;
+	}
+
+	public void setSalon(String salon) {
+		this.salon = salon;
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.runt.prueba.service;
+
+import java.util.List;
+
+import com.runt.prueba.entity.Colegio;
+
+public class ColegioServiceImpl implements ColegioServiceDecl{
+
+	@Override
+	public List<Colegio> getAllColegio() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Colegio add(Colegio colegio) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

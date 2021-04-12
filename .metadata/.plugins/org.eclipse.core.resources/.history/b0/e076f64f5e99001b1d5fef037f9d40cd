@@ -1,0 +1,6 @@
+package com.runt.prueba.entity;
+
+@Entity
+public class Profesor {
+
+}

@@ -1,0 +1,28 @@
+package com.runt.prueba.controler;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.runt.prueba.entity.Asignatura;
+import com.runt.prueba.service.AsignaturaServiceDecl;
+
+@RestController
+
+public class AsignaturaControler {
+
+	@Autowired
+	private AsignaturaServiceDecl asignaturaService;
+
+	@GetMapping(path = { "/{id}" })
+	public List<Asignatura> buscarProfesorId((@PathVariable("id") Long id) {
+		return asignaturaService.getAllProfesorId(id);
+	}
+	
+	public Asignatura add(Asignatura asignatura) {
+		return asignaturaService.add(asignatura);
+	}
+
+}

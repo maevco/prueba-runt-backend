@@ -1,0 +1,38 @@
+package com.runt.prueba.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "curso")
+public class Curso {
+
+	private Long id;
+	private int grado;
+	private String salon;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public int getGrado() {
+		return grado;
+	}
+
+	public void setGrado(int grado) {
+		this.grado = grado;
+	}
+
+	public String getSalon() {
+		return salon;
+	}
+
+	public void setSalon(String salon) {
+		this.salon = salon;
+	}
+
+}

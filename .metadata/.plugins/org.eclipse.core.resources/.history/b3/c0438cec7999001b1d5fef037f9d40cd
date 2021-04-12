@@ -1,0 +1,13 @@
+package com.runt.prueba.service;
+
+import java.util.List;
+
+import com.runt.prueba.entity.Estudiante;
+
+public interface EstudianteServiceDecl {
+
+	public List<Estudiante> getAllEstudiante();
+
+	public Estudiante add(Estudiante estudiante);
+
+}

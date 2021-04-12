@@ -1,0 +1,21 @@
+package com.runt.prueba.controler;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.runt.prueba.service.AsignaturaServiceDecl;
+
+@RestController
+
+public class AsignaturaControler {
+
+	@Autowired
+	private AsignaturaServiceDecl asignaturaService;
+
+	public List<ASignatura> buscarProfesorId() {
+		return asignaturaService.getAllProfesorId(0)
+	}
+
+}

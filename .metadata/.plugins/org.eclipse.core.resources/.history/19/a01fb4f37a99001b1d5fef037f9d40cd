@@ -1,0 +1,12 @@
+package com.runt.prueba.service;
+
+import java.util.List;
+
+import com.runt.prueba.entity.Asignatura;
+
+public interface AsignaturaServiceDecl {
+	
+	
+	public List<Asignatura> getAllProfesorId();
+
+}

@@ -1,0 +1,11 @@
+package com.runt.prueba.service;
+
+import java.util.List;
+
+import com.runt.prueba.entity.Colegio;
+
+public interface ColegioServiceDecl {
+	
+	public List<Colegio> getAllColegio();
+
+}

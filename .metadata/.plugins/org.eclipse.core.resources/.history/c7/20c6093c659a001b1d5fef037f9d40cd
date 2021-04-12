@@ -1,0 +1,16 @@
+package com.runt.prueba.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import com.runt.prueba.entity.Asignatura;
+
+public interface AsignaturaRepository extends JpaRepository<Asignatura, Long> {
+	
+	
+	@Query("SELECT DISTINCT a FROM Estudiante e JOIN e.asignaturas a JOIN a.profesor p WHERE p.id = ?1 ")
+	public List<Asignatura> buscarProfesorId(long profesorId);
+
+}

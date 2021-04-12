@@ -1,0 +1,12 @@
+package com.runt.prueba.service;
+
+import java.util.List;
+
+import com.runt.prueba.entity.Curso;
+
+public interface CursoServiceDecl {
+
+	public List<Curso> getAllCurso();
+
+	public Curso add(Curso curso);
+}

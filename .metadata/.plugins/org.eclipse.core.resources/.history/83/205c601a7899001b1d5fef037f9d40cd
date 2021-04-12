@@ -1,0 +1,5 @@
+package com.runt.prueba.repository;
+
+public interface ProfesorRepository {
+
+}
